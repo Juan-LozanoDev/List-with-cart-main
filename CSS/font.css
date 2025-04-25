@@ -1,0 +1,36 @@
+body {
+    font-size: 16px;
+    font-family: "Red Hat Text", sans-serif;
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.cards h3 {
+    font-size: 14px;
+    color: var(--Rose400);
+    font-weight: 400;
+}
+
+.cards .description {
+    color: var(--Rose900);
+    font-weight: 600;
+}
+
+.price {
+    color: var(--Red);
+    font-weight: 600;
+}
+
+
+.your-Cart {
+    color: var(--Red);
+    font-weight: 700;
+}
+
+#text-cart {
+    color: var(--Rose400);
+    font-weight: 600;
+}
