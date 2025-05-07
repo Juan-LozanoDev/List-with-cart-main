@@ -19,11 +19,14 @@ header h1 {
     font-weight: 600;
 }
 
+.add-To-Cart.active { 
+    color: var(--Rose50);
+}
+
 .price {
     color: var(--Red);
     font-weight: 600;
 }
-
 
 .your-Cart {
     color: var(--Red);
@@ -35,6 +38,77 @@ header h1 {
     font-weight: 600;
 }
 
+.product-Cart .description {
+    color: var(--Rose900);
+    font-weight: 600;
+}
+
+.product-quantity {
+    color: var(--Red);
+    font-weight: 600;
+}
+
+.product-price {
+    color: var(--Rose400);
+    font-weight: 400;
+}
+
+.total-product-price {
+    color: var(--Rose500);
+    font-weight: 600;
+}
+
+.totalPrice {
+    color: var(--Rose500);
+}
+
+.finalPrice {
+    color: var(--Rose900);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.carbon-neutral {
+    color: var(--Rose900);
+}
+
+.confirm-order {
+    color: var(--Rose50);
+    font-size: 14px;
+    font-weight: 400;
+}
+
 #modal {
     color: var(--Rose900);
+}
+
+#hopeEnjoyFood {
+    color: var(--Rose400);
+    font-weight: 600;
+}
+
+.productSelected-Description {
+    color: var(--Rose900);
+    font-weight: 600;
+    white-space-collapse: break-spaces;
+    text-overflow: ellipsis;
+}
+
+.productSelected-Amount {
+    color: var(--Red);
+    font-weight: 600;
+}
+
+.productSelected-Price {
+    color: var(--Rose400);
+    font-weight: 400;
+}
+
+.productSelected-Total {
+    color: var(--Rose900);
+    font-weight: 700;
+}
+
+.new-order {
+    color: var(--Rose50);
 }
