@@ -13,6 +13,10 @@ header h1 {
     margin-bottom: 20px;
 }
 
+.cards {
+    margin-bottom: 10px;
+}
+
 .product {
     width: 100%;
     border-radius: 10px;
