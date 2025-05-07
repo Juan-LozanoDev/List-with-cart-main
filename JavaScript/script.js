@@ -23,6 +23,7 @@ addToCart.forEach((button, index) => {
             <p class ="quantity">${quantity}</p>
             <button class = "add"><img src ="./assets/icons/add-circle-svgrepo-com.svg" alt="add"></button>`;
 
+    
     /* <----------------------------------------------------------------------------------------------------------------->*/
     // Se seleccionan los botones add y minus y la cantidad
 
@@ -104,7 +105,22 @@ addToCart.forEach((button, index) => {
                                 </button>
                             </span>`;
         fullCart.insertAdjacentElement("afterbegin", productCart);
+
+        // Boton para eliminar producto del carrito
+        let buttonDelete = productCart.querySelector('.delete-product');
+        buttonDelete.addEventListener('click', (e) => {
+          e.stopPropagation();
+          productCart.remove();
+          quantity = 0;
+          quantityDisplay.textContent = quantity;
+          button.textContent = "";
+          button.classList.remove("active");
+          button.innerHTML = `<img src="./assets/images/icon-add-to-cart.svg" alt="icon add to cart">Add to Cart`;
+          imageProducts[index].classList.remove("active");
+          updateCart();
+        });
       }
+
 
       // Actualizar estado del carrito
 
@@ -136,24 +152,8 @@ addToCart.forEach((button, index) => {
         totalQuantity += parseFloat(totalQuantityProduct.textContent);
       });
       numbersOfProducts.textContent = totalQuantity;
-    }
-    updateCart();
-
-    // Boton para eliminar producto del carrito
-    let productsOn = fullCart.querySelectorAll(".product-Cart");
-    let buttonsDelete = document.querySelectorAll(".delete-product");
-    buttonsDelete.forEach((buttonDelete, i) => {
-      buttonDelete.addEventListener("click", () => {
-        productsOn[i].remove();
-        quantity = 0;
-        quantityDisplay.textContent = quantity;
-        button.textContent = "";
-        button.classList.remove("active");
-        button.innerHTML = `<img src="./assets/images/icon-add-to-cart.svg" alt="icon add to cart">Add to Cart`;
-        imageProducts[index].classList.remove("active");
-        updateCart();
-      });
-    });
+    } updateCart();
+    
   });
 });
 
