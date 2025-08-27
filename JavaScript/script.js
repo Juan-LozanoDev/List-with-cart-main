@@ -277,6 +277,6 @@ newOrder.addEventListener("click", () => {
     emptyCart.classList.add("active");
     productsConfirmed.innerHTML = "";
     modal.close();
-    document.removeEventListener('keydown', escape);
+    document.removeEventListener('keydown');
 });
 
